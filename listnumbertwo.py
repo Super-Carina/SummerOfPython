@@ -15,8 +15,13 @@ countries = ["us", "england", "france", "singapore"]
 #
 
 
+# for tomorrow, 7/1 write this function
+
+def get_number_of_elements(lst):
+    pass
+
 def get_last_element(lst):
-    return lst[]
+    return lst[9]
 
 def get_first_element(lst):
     return lst[0]
