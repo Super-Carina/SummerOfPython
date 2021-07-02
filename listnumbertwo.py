@@ -8,27 +8,28 @@ states = ["wa", "ca", "or"]
 
 countries = ["us", "england", "france", "singapore"]
 
-# homework 1
-# print the last element of tophat using only len.
-# test it with an empty list []
-#
-#
+words = [mouse, "stuff", 78.9, "what", "okay"]
 
+empty = []
 
-# for tomorrow, 7/1 write this function
+nano = [0]
 
 def get_number_of_elements(lst):
-    pass
+    return len(lst)
 
+# fix
 def get_last_element(lst):
-    return lst[0]
+    index = len(lst) - 1
+    return lst[index]
 
 def get_first_element(lst):
+    if len(lst) == 0:
+        return None
     return lst[0]
 
-for list_name in ("tophat", "mouse", "numbers", "states", "countries"):
-    l = globals()[list_name]
-    print(list_name, " [last]  ->", get_last_element(l))
-    print(list_name, " [first] ->", get_first_element(l))
-    print(list_name, " [count] ->", get_number_of_elements(l))
+for list_name in ("words", "empty"):
+    lst = globals()[list_name] # dont mind this
+    print(list_name, " [count] ->", get_number_of_elements(lst))
+    print(list_name, " [first] ->", get_first_element(lst))
+    print(list_name, " [last]  ->", get_last_element(lst))
     print("--------------")    
