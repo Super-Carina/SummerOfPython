@@ -17,7 +17,7 @@ Choose a planet to find your weight:
 earth = input("Now enter your weight on Earth: ")
 
 if planet == "1":
-    print(mercury(earth))
+    print(mercury)
 
 #
 # your weight on:

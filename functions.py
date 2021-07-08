@@ -1,17 +1,15 @@
-def hi(m):
-    v = "--> hi " + mystr(m)
-    return v
+# if x > 10:
+#   add 2 to it
+# else:
+# multipy by 2
+#   
 
-def mystr(v):
-    print("this is my str!!!!!")
-    return str(v)    
+def random(x) :
+    return x + 2
 
-t = hi("kyle")
+print(random(10))
 
-print(t)
+def number(x) :
+    return x * 2
 
-print(hi("violet"))
-
-print(hi(5))
-
-
+print(number(1))
